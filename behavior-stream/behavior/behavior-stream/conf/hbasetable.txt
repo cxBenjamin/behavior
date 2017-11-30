@@ -1,0 +1,12 @@
+create 'behavior_user_app_201703','timeLen'
+create 'behavior_user_hour_time_201703','timeLen'
+create 'behavior_user_day_time_201703','timeLen'
+create 'behavior_user_hour_app_time_201703','timeLen'
+create 'behavior_user_day_app_time_201703','timeLen'
+
+truncate 'behavior_user_app_201703'
+truncate 'behavior_user_hour_time_201703'
+truncate 'behavior_user_day_time_201703'
+truncate 'behavior_user_hour_app_time_201703'
+truncate 'behavior_user_day_app_time_201703'
+

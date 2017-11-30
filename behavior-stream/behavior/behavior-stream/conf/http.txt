@@ -1,0 +1,13 @@
+echo '{"userId":2000,"day":"2017-03-12","begintime":1489305403000,"endtime":1489306003000,"data":[{"package":"com.browser1","activetime":60000},{"package":"com.browser","activetime":100000}]}' > behavior-json.log
+
+curl 'http://DB-SSS-01:8080/behavior/periodAppList?dateType=day&userId=2000'
+curl 'http://DB-SSS-01:8080/behavior/periodAppList?dateType=week&userId=2000'
+curl 'http://DB-SSS-01:8080/behavior/periodAppList?dateType=month&userId=2000'
+
+curl 'http://DB-SSS-01:8080/behavior/totalStat?dateType=day&userId=2000'
+curl 'http://DB-SSS-01:8080/behavior/totalStat?dateType=week&userId=2000'
+curl 'http://DB-SSS-01:8080/behavior/totalStat?dateType=month&userId=2000'
+
+curl 'http://DB-SSS-01:8080/behavior/appStat?dateType=day&userId=2000&packageName=com.browser'
+curl 'http://DB-SSS-01:8080/behavior/appStat?dateType=week&userId=2000&packageName=com.browser'
+curl 'http://DB-SSS-01:8080/behavior/appStat?dateType=month&userId=2000&packageName=com.browser'
